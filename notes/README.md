@@ -49,3 +49,4 @@ Imported the cleaned CSV as table superstore
 ## step 5.3: Insight
 - Initial observation: Technology category is creating the most profit. Tables is the only sub-category with negative profit. The sales quantity and profit ranges depending on the subcategory. Offic supply, Art sub-category was the lowest sales but had higher proft than 6 other sub categories.
 - Shows sub-categories need to be looked into. Are they worth keeping? whilst why are technologies doing well?
+- While Technology generates the highest sales, some sub-categories such as Tables show negative profitability, indicating pricing or cost issues
