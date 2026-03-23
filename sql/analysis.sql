@@ -9,3 +9,16 @@ SELECT
 FROM superstore
 GROUP BY month
 ORDER BY month;
+
+
+Which products drive profit, and which lose money?
+
+-- Query 2: Sales & Profit by Category and Sub-Category
+SELECT 
+    Category,
+    Sub_Category,
+    SUM(Sales) AS total_sales,
+    SUM(Profit) AS total_profit
+FROM superstore
+GROUP BY Category, Sub_Category
+ORDER BY total_profit DESC;
