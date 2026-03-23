@@ -1,8 +1,9 @@
 -- SQL analysis will go here
 
--- Total monthly sales and profit
+-- Query 1: Total Sales & Profit by Month
+-- Purpose: Aggregate daily order data to see monthly trends
 SELECT 
-    DATE_TRUNC('month', "Order Date") AS month,
+    substr(order_date, 1, 7) AS month,  -- take YYYY-MM from YYYY-MM-DD
     SUM(Sales) AS total_sales,
     SUM(Profit) AS total_profit
 FROM superstore
