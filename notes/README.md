@@ -25,5 +25,5 @@ GROUP BY month
 ORDER BY month;
 
 ## step 5: Insight
-- Initial observation: Sales and profit increase over the year with peaks in November/December
+- Initial observation: Sales and profit increase over the years wit some seasonal peaks in June and a range year to year from September to December
 - Shows seasonal trends → useful for business decision-making
