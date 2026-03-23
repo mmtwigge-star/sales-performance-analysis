@@ -16,7 +16,7 @@ Imported the cleaned CSV as table superstore
 
 ## Step 4: Run SQL queries
 - Wrote SQL query to sum Sales and Profit per month using:
-SELECT 
+- SELECT 
     substr(order_date, 1, 7) AS month,
     SUM(Sales) AS total_sales,
     SUM(Profit) AS total_profit
