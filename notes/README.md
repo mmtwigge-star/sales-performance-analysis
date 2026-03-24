@@ -15,7 +15,7 @@ Deleted old, inconsistent columns (Order Date and Ship Date) after confirming th
 Imported the cleaned CSV as table superstore
 
 ## Step 4.1: Run SQL queries
-- Wrote SQL query to sum Sales and Profit per month using:
+- Wrote SQL query to **sum Sales and Profit per month** using:
 - SELECT 
     substr(order_date, 1, 7) AS month,
     SUM(Sales) AS total_sales,
@@ -31,7 +31,7 @@ Imported the cleaned CSV as table superstore
 
 
 ## Step 5.1: Run SQL queries
-- Query 2: Sales & Profit by Category and Sub-Category
+- Query 2: **Sales & Profit by Category and Sub-Category**
 - SELECT 
     Category,
     Sub_Category,
@@ -50,3 +50,41 @@ Imported the cleaned CSV as table superstore
 - Initial observation: Technology category is creating the most profit. Tables is the only sub-category with negative profit. The sales quantity and profit ranges depending on the subcategory. Offic supply, Art sub-category was the lowest sales but had higher proft than 6 other sub categories.
 - Shows sub-categories need to be looked into. Are they worth keeping? whilst why are technologies doing well?
 - While Technology generates the highest sales, some sub-categories such as Tables show negative profitability, indicating pricing or cost issues
+
+- 
+
+## step 6.1: Run SQL queries
+-- Query 3: Sales & Profit by country and region  **CANNOT ANSWER ACCURATELY AS REGIONS ARE SEPERATED STRANGELY**
+-SELECT 
+    Region,
+    SUM(Sales) AS total_sales,
+    SUM(Profit) AS total_profit
+-FROM superstore
+-GROUP BY Region
+-ORDER BY total_profit DESC;
+
+## step 6.2: Question to ask
+- Which region make the most profit?       quick answer: 
+- Are any regions negative profit?         quick answer: 
+- Is high sales linked to higher profit?   quick answer: 
+
+## step 6.3: Insight
+- Initial observation: 
+- Shows 
+- 
+
+
+
+## step 7.1: Run SQL queries
+-- Query 4: Sales & Profit by Customer Segment
+-SELECT 
+    Segment,
+    SUM(Sales) AS total_sales,
+    SUM(Profit) AS total_profit
+-FROM superstore
+-GROUP BY Segment
+-ORDER BY total_profit DESC;
+
+## step 7.2: Insight
+- The Consumer segment contributes the highest overall profit, making it the most valuable customer group.
+
