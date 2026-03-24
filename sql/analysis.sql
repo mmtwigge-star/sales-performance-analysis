@@ -22,3 +22,24 @@ SELECT
 FROM superstore
 GROUP BY Category, Sub_Category
 ORDER BY total_profit DESC;
+
+
+-- Query 3: Sales & Profit by market(continent) 
+SELECT 
+    market,
+    SUM(Sales) AS total_sales,
+    SUM(Profit) AS total_profit
+FROM superstore
+GROUP BY market
+ORDER BY total_profit DESC;
+
+
+
+-- Query 4: Sales & Profit by Customer Segment
+SELECT 
+    Segment,
+    SUM(Sales) AS total_sales,
+    SUM(Profit) AS total_profit
+FROM superstore
+GROUP BY Segment
+ORDER BY total_profit DESC;
