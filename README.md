@@ -1,27 +1,36 @@
 # sales-performance-analysis
 Analysis of sales data to identify trends, conversion rates, and performance insights using SQL and Power BI
 
-# Sales Performance Analysis
+# Superstore Sales & Profit Analysis
 
 ## 📌 Project Overview
-This project analyzes sales data to identify trends, conversion rates, and key performance drivers.
-
-## 🎯 Objectives
-- Understand conversion rates across stages
-- Identify top-performing channels
-- Analyze trends over time
+This project analyzes sales and profitability using SQL and Power BI to identify key business insights.
 
 ## 🛠 Tools Used
-- SQL
+- SQL (SQLite)
 - Power BI
-- Excel
+- Google Sheets (data cleaning)
 
-## 📊 Key Insights
-(To be filled after analysis)
+## 📊 Dashboard
+![Dashboard](dashboard/dashboard-overview.png)
 
-## 📈 Dashboard
-(Add screenshots here later)
+## 🔍 Key Analysis
+- Monthly Sales & Profit Trends
+- Category & Sub-Category Performance
+- Regional Analysis
+- Customer Segment Analysis
 
-## 📂 Files
-- SQL queries: /sql
-- Dashboard: /dashboard
+## 💡 Key Insights
+- Sales peak in November/December, showing strong seasonality
+- Technology drives high revenue but not always profit
+- Tables sub-category is consistently unprofitable
+- Consumer segment generates the highest profit
+
+## 🧹 Data Cleaning
+- Standardized inconsistent date formats using Google Sheets
+- Created a normalized date column for monthly aggregation
+
+## 📂 Project Structure
+- `/sql` → SQL queries
+- `/dashboard` → Power BI visuals
+- `/data` → dataset (if included)
