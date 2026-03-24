@@ -31,10 +31,14 @@ This project analyzes sales and profitability using SQL and Power BI to identify
 
 - Despite strong overall performance, the Tables sub-category consistently generates negative profit, suggesting inefficiencies in pricing, cost management, or discounting strategy.
 
-## 🧹 Data Cleaning
+## 🧹 Data Cleaning & Preparation
 - Standardised inconsistent date formats using Google Sheets
 - Created a normalised date column for monthly aggregation
-- 
+
+- Identified inconsistencies in the `Region` field, where it combined both US sub-regions (e.g., South, West) and broader international groupings, leading to unclear and potentially misleading segmentation.
+- To address this, the analysis was adjusted to use the `Market` field, which provides more consistent geographic groupings at a continental level.
+- Additionally, the United States and Canada were treated as separate entities to better reflect their significance as key markets.
+- This ensured that regional comparisons were meaningful and analytically sound.
 
 ## 📂 Project Structure
 - `/sql` → SQL queries
