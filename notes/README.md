@@ -54,37 +54,38 @@ Imported the cleaned CSV as table superstore
 - 
 
 ## step 6.1: Run SQL queries
--- Query 3: Sales & Profit by country and region  **CANNOT ANSWER ACCURATELY AS REGIONS ARE SEPERATED STRANGELY**
+-- Query 3: Sales & Profit by Market  **using column Market for continent**
 -SELECT 
-    Region,
+    market,
     SUM(Sales) AS total_sales,
     SUM(Profit) AS total_profit
 -FROM superstore
--GROUP BY Region
+-GROUP BY market
 -ORDER BY total_profit DESC;
 
+**Note: using region would cause confusion in results as it would cross between different markets. e.g. South region would pull results from EU, LATAM and US**
+
 ## step 6.2: Question to ask
-- Which region make the most profit?       quick answer: 
-- Are any regions negative profit?         quick answer: 
-- Is high sales linked to higher profit?   quick answer: 
-
-## step 6.3: Insight
-- Initial observation: 
-- Shows 
+- Which region make the most profit?       quick answer: APAC 
+- Are any regions negative profit?         quick answer: None 
+- Is high sales linked to higher profit?   quick answer: No, more sales in EMEA but Africa has higher profit
 - 
-
+## step 6.3: Insight
+- Initial observation: APAC and then EU has the highest profits. On the other hand, sales in Africa and EMEA are more than 10x Canada, but the profit is less than 4/5x thats of Canada. 
+- Shows there needs to be a deeper analysis of value from each market. Maybe looking into trends within the countries rather than the whole continent. 
+  
 
 
 ## step 7.1: Run SQL queries
 -- Query 4: Sales & Profit by Customer Segment
 -SELECT 
     Segment,
-    SUM(Sales) AS total_sales,
+SUM(Sales) AS total_sales,
     SUM(Profit) AS total_profit
 -FROM superstore
 -GROUP BY Segment
 -ORDER BY total_profit DESC;
 
 ## step 7.2: Insight
-- The Consumer segment contributes the highest overall profit, making it the most valuable customer group.
+- The Consumer segment contributes the highest overall profits, making it the most valuable customer group.
 
