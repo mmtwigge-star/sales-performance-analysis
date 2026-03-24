@@ -12,7 +12,7 @@ This project analyzes sales and profitability using SQL and Power BI to identify
 - Google Sheets (data cleaning)
 
 ## 📊 Dashboard
-![Dashboard](dashboard/dashboard-overview.png)
+![Dashboard](dashboard/SuperStore-dashboard.png)
 
 ## 🔍 Key Analysis
 - Monthly Sales & Profit Trends
