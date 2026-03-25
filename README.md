@@ -3,24 +3,24 @@ Analysis of sales data to identify trends, conversion rates, and performance ins
 
 # Superstore Sales & Profit Analysis
 
-## 📌 Project Overview
+## Project Overview
 This project analyzes sales and profitability using SQL and Power BI to identify key business insights.
 
-## 🛠 Tools Used
+## Tools Used
 - SQL (SQLite)
 - Power BI
 - Google Sheets (data cleaning)
 
-## 📊 Dashboard
+## Dashboard
 ![Dashboard](dashboard/SuperStore-dashboard.png)
 
-## 🔍 Key Analysis
+## Key Analysis
 - Monthly Sales & Profit Trends
 - Category & Sub-Category Performance
 - Regional Analysis
 - Customer Segment Analysis
 
-## 💡 Key Insights
+## Key Insights
 
 - Sales show a consistent upward trend year-over-year, indicating overall business growth.
 - A recurring seasonal pattern is visible, with sales increasing towards the end of each quarter (March, June, September, December), followed by a drop at the start of the next period.
@@ -31,7 +31,7 @@ This project analyzes sales and profitability using SQL and Power BI to identify
 
 - Despite strong overall performance, the Tables sub-category consistently generates negative profit, suggesting inefficiencies in pricing, cost management, or discounting strategy.
 
-## 🧹 Data Cleaning & Preparation
+## Data Cleaning & Preparation
 - Standardised inconsistent date formats using Google Sheets
 - Created a normalised date column for monthly aggregation
 
@@ -40,7 +40,7 @@ This project analyzes sales and profitability using SQL and Power BI to identify
 - Additionally, the United States and Canada were treated as separate entities to better reflect their significance as key markets.
 - This ensured that regional comparisons were meaningful and analytically sound.
 
-## 📂 Project Structure
+## Project Structure
 - `/sql` → SQL queries
 - `/dashboard` → Power BI visuals
 - `/data` → dataset 
