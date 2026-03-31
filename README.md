@@ -4,7 +4,7 @@ Analysis of sales data to identify trends, conversion rates, and performance ins
 # Superstore Sales & Profit Analysis
 
 ## Project Overview
-This project analyzes sales and profitability using SQL and Power BI to identify key business insights.
+This project analyses sales and profitability using SQL and Power BI to identify key business insights.
 
 ## Tools Used
 - SQL (SQLite)
